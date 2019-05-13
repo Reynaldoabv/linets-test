@@ -16,15 +16,204 @@
       crossorigin="anonymous"
     />
 
-    <!-- CSS Files -->
-    <link href="css/reset.css" type="text/css" rel="stylesheet" />
+    <!-- CSS File -->
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
 
     <title>Desafio Latam</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <buttto class="btn btn-success">Go!</buttto>
+    <!-- Back to top button -->
+    <a href="#"><i class="fas fa-arrow-up back-to-top"></i></a>
+
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-transparent container fixed-top"
+      >
+        <a class="navbar-brand" href="#">
+          <img src="/img/latam_logo.png" alt="Logo-latam" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Equipo <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+    </header>
+    <!-- Carousel -->
+    <div class="bd-example">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/bg.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-5 container">
+                COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO
+              </h1>
+              <button class="btn btn-info m-3">Comienza acá!</button>
+              <button class="btn btn-success">Más info</button>
+              <p class="container">
+                Hay una escacez gigante de desarrolladores en el mundo y más aún
+                en Latinoamérica, se necesitan más desarrolladores y Tú puedes
+                ser uno! .
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/header_background_30.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-5 container">
+                COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO
+              </h1>
+              <button class="btn btn-info m-3">Comienza acá!</button>
+              <button class="btn btn-success">Más info</button>
+              <p class="container">
+                Hay una escacez gigante de desarrolladores en el mundo y más aún
+                en Latinoamérica, se necesitan más desarrolladores y Tú puedes
+                ser uno! .
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/home-bg.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-5 container">
+                COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO
+              </h1>
+              <button class="btn btn-info m-3">Comienza acá!</button>
+              <button class="btn btn-success">Más info</button>
+              <p class="container">
+                Hay una escacez gigante de desarrolladores en el mundo y más aún
+                en Latinoamérica, se necesitan más desarrolladores y Tú puedes
+                ser uno! .
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- Carousel end -->
+    <!-- Bootcamp section -->
+    <section class="bootcamp container text-center">
+      <h5 class="mt-5">
+        EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA
+      </h5>
+      <P class="mt-3 container"
+        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. A soluta
+        excepturi rerum ipsam dolor blanditiis non quo, voluptates tenetur
+        distinctio.</P
+      >
+    </section>
+    <!-- End Bootcamp Section-->
+    <!-- Info Section -->
+    <section class="info container-fluid text-center bg-light">
+      <h4 class="pt-5 align-middle">SOLICITA INFORMACION E INSCRIBETE</h4>
+      <P class="mt-3 container"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed natus
+        perferendis ad iure quisquam voluptatibus sit odit dolores nesciunt
+        doloribus.</P
+      >
+      <button class="btn btn-info">Inscribete!</button>
+      <p class="mt-3 container">Vive la experiencia Desafio Latam!</p>
+    </section>
+    <!-- End Info Section-->
+    <section class="row container-fluid">
+      <div class="col-6 container">
+        <div class="contact">
+          <h5>Contact</h5>
+          <p>Ezequias Alliende 2361</p>
+          <p>P: +56 9 5117 7975</p>
+          <p class="text-info">inscripciones@desafiolatam.com</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="contact">
+          <h5>Suscribete</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <form>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Ingresa tu email..."
+              />
+              <button class="btn btn-light">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -43,5 +232,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>
