@@ -15,14 +15,13 @@ img {
   display: hide;
   z-index: 20;
 }
-header {
-  nav {
-    margin: 0;
-    a {
-      img {
-        width: 150px;
-        height: 35px;
-      }
+
+nav {
+  margin: 0;
+  a {
+    img {
+      width: 150px;
+      height: 35px;
     }
   }
 }
@@ -50,7 +49,7 @@ header {
 }
 
 .info {
-  height: 250px;
+  height: 270px;
   p {
     max-width: 690px;
   }
@@ -58,8 +57,87 @@ header {
 
 .contact {
   margin: 0;
+  button {
+    border: 1px solid grey;
+  }
 }
 
 footer {
   background-color: #000;
+}
+
+@media (max-width: 550px) {
+  img {
+    height: 420px;
+  }
+  .carousel-inner {
+    h1 {
+      font-size: 25px;
+    }
+    button {
+      margin: 0;
+      padding: 3px 5px;
+    }
+    p {
+      max-width: 400px;
+      font-size: 13px;
+    }
+  }
+
+  .info {
+    height: 300px;
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 13px;
+      max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  img {
+    height: 350px;
+  }
+  .carousel-inner {
+    h1 {
+      font-size: 15px;
+    }
+    button {
+      margin: 0;
+      padding: 2px 3px;
+    }
+    p {
+      display: none;
+    }
+  }
+  .bootcamp {
+    max-width: 300px;
+    h5 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .info {
+    h4 {
+      font-size: 15px;
+    }
+    p {
+      max-width: 300px;
+    }
+  }
+  .contact {
+    h5 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  #subscribe {
+    margin-top: 0px;
+  }
 }

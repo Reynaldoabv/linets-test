@@ -1,14 +1,11 @@
 $(document).ready(function() {
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 50) {
-      $('#nav').css('background', '#000');
-    } else {
-      $('#nav').css('background', 'transparent');
-    }
-  });
+  $(document).scroll(function() {
+    var height = $('.navbar').height();
 
-  $('.back-to-top').click(function() {
-    alert('Testing JQ');
+    if ($(this).scrollTop() > height) {
+      $('.navbar').css('background-color', 'black');
+    } else {
+      $('.navbar').css('background-color', 'transparent');
+    }
   });
 });

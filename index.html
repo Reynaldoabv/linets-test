@@ -30,14 +30,12 @@
     <title>Desafio Latam</title>
   </head>
   <body>
-    <!-- Back to top button -->
-    <a href="#"><i class="fas fa-arrow-up back-to-top"></i></a>
-
-    <header id="nav">
+    <!-- Back to top button 
+    <a href="#"><i class="fas fa-arrow-up back-to-top"></i></a> -->
+    <header>
       <!-- Navbar -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-transparent container fixed-top navbar-change-color"
-        id="nav"
+        class="navbar navbar-expand-lg navbar-dark bg-transparent container fixed-top"
       >
         <a class="navbar-brand" href="#">
           <img src="img/latam_logo.png" alt="Logo-latam" />
@@ -96,7 +94,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/bg.jpeg" class="d-block w-100" alt="img-1" />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-sm-block">
               <h1 class="display-5 container">
                 COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO
               </h1>
@@ -115,7 +113,7 @@
               class="d-block w-100"
               alt="img-2"
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-sm-block">
               <h1 class="display-5 container">
                 COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO
               </h1>
@@ -130,7 +128,7 @@
           </div>
           <div class="carousel-item">
             <img src="img/home-bg.jpg" class="d-block w-100" alt="img-3" />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-sm-block">
               <h1 class="display-5 container">
                 COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO
               </h1>
@@ -167,7 +165,7 @@
     <!-- End of Carousel -->
     <!-- Bootcamp section -->
     <section class="bootcamp container text-center">
-      <h5 class="mt-5">
+      <h5 class="mt-5" id="bootcamp">
         EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA
       </h5>
       <P class="mt-3 container"
@@ -190,16 +188,17 @@
     </section>
     <!-- End of Info Section-->
     <!-- Contact Section -->
-    <section class="row contact justify-content-md-center">
-      <div class="col-3 mt-5 mb-5">
+    <section class="row contact justify-content-end">
+      <div class="col-sm-5 mt-5 mb-5">
         <div class="text-left">
           <h5>Contact</h5>
+          <p><strong>Desafio Latam</strong></p>
           <p>Ezequias Alliende 2361</p>
           <p>P: +56 9 5117 7975</p>
           <p class="text-info">inscripciones@desafiolatam.com</p>
         </div>
       </div>
-      <div class="col-4 mt-5 mb-5">
+      <div class="col-sm-6 mt-5 mb-5" id="subscribe">
         <div class="contact">
           <h5>Suscribete</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -218,7 +217,7 @@
                 id="send"
                 name="send"
                 value="send"
-                class="btn btn-light"
+                class="btn btn-white"
               >
                 Enviar
               </button>

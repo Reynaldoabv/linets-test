@@ -14,9 +14,9 @@ img {
   display: hide;
   z-index: 20; }
 
-header nav {
+nav {
   margin: 0; }
-  header nav a img {
+  nav a img {
     width: 150px;
     height: 35px; }
 
@@ -36,13 +36,60 @@ header nav {
     max-width: 690px; }
 
 .info {
-  height: 250px; }
+  height: 270px; }
   .info p {
     max-width: 690px; }
 
 .contact {
   margin: 0; }
+  .contact button {
+    border: 1px solid grey; }
 
 footer {
-  background-color: #000;
-  height: 100px; }
+  background-color: #000; }
+
+@media (max-width: 550px) {
+  img {
+    height: 420px; }
+  .carousel-inner h1 {
+    font-size: 25px; }
+  .carousel-inner button {
+    margin: 0;
+    padding: 3px 5px; }
+  .carousel-inner p {
+    max-width: 400px;
+    font-size: 13px; }
+  .info {
+    height: 300px; }
+    .info h4 {
+      font-size: 20px; }
+    .info p {
+      font-size: 13px;
+      max-width: 400px; } }
+
+@media (max-width: 400px) {
+  img {
+    height: 350px; }
+  .carousel-inner h1 {
+    font-size: 15px; }
+  .carousel-inner button {
+    margin: 0;
+    padding: 2px 3px; }
+  .carousel-inner p {
+    display: none; }
+  .bootcamp {
+    max-width: 300px; }
+    .bootcamp h5 {
+      font-size: 15px; }
+    .bootcamp p {
+      font-size: 13px; }
+  .info h4 {
+    font-size: 15px; }
+  .info p {
+    max-width: 300px; }
+  .contact h5 {
+    font-size: 15px; }
+  .contact p {
+    font-size: 13px; }
+  #subscribe {
+    margin-top: 0px; } }
