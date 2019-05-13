@@ -33,10 +33,11 @@
     <!-- Back to top button -->
     <a href="#"><i class="fas fa-arrow-up back-to-top"></i></a>
 
-    <header>
+    <header id="nav">
       <!-- Navbar -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-transparent container fixed-top"
+        class="navbar navbar-expand-lg navbar-dark bg-transparent container fixed-top navbar-change-color"
+        id="nav"
       >
         <a class="navbar-brand" href="#">
           <img src="img/latam_logo.png" alt="Logo-latam" />
@@ -74,7 +75,7 @@
           </ul>
         </div>
       </nav>
-      <!-- Navbar end -->
+      <!-- End of Navbar -->
     </header>
     <!-- Carousel -->
     <div class="bd-example">
@@ -163,7 +164,7 @@
         </a>
       </div>
     </div>
-    <!-- Carousel end -->
+    <!-- End of Carousel -->
     <!-- Bootcamp section -->
     <section class="bootcamp container text-center">
       <h5 class="mt-5">
@@ -175,7 +176,7 @@
         distinctio.</P
       >
     </section>
-    <!-- End Bootcamp Section-->
+    <!-- End of Bootcamp Section-->
     <!-- Info Section -->
     <section class="info container-fluid text-center bg-light">
       <h4 class="pt-5 align-middle">SOLICITA INFORMACION E INSCRIBETE</h4>
@@ -187,38 +188,53 @@
       <button class="btn btn-info">Inscribete!</button>
       <p class="mt-3 container">Vive la experiencia Desafio Latam!</p>
     </section>
-    <!-- End Info Section-->
-    <section class="row">
-      <div class="col-3">
-        <div class="contact justify-content-center">
+    <!-- End of Info Section-->
+    <!-- Contact Section -->
+    <section class="row contact justify-content-md-center">
+      <div class="col-3 mt-5 mb-5">
+        <div class="text-left">
           <h5>Contact</h5>
           <p>Ezequias Alliende 2361</p>
           <p>P: +56 9 5117 7975</p>
           <p class="text-info">inscripciones@desafiolatam.com</p>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-4 mt-5 mb-5">
         <div class="contact">
           <h5>Suscribete</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <form>
-            <div class="form-group">
+          <form class="row" method="POST" action="send.php">
+            <div class="form-group col-md">
               <input
                 type="email"
+                name="email"
+                id="email"
+                required="required"
                 class="form-control"
                 placeholder="Ingresa tu email..."
               />
-              <button class="btn btn-light">Enviar</button>
+              <button
+                type="submit"
+                id="send"
+                name="send"
+                value="send"
+                class="btn btn-light"
+              >
+                Enviar
+              </button>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <!-- End of Contact -->
     <!-- Footer -->
-    <footer class="container-fluid">
-      <span class="text-white align-middle container">
-        DESAFIOLATAM 2016 - CURSO FULLSTACK G5
-      </span>
+    <footer class="container-fluid p-5">
+      <div class="container">
+        <span class="text-white">
+          DESAFIOLATAM 2016 - CURSO FULLSTACK G5
+        </span>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -238,6 +254,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

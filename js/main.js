@@ -1,29 +1,14 @@
 $(document).ready(function() {
-  /* Back to top button */
-  var btt = $('.back-to-top');
-
-  btt.on('click', function(e) {
-    $('html, body').animate(
-      {
-        scrollTop: 0
-      },
-      1500
-    );
-
-    e.preventDefault();
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 50) {
+      $('#nav').css('background', '#000');
+    } else {
+      $('#nav').css('background', 'transparent');
+    }
   });
 
-  $(window).on('scroll', function() {
-    var self = $(this),
-      height = self.height(),
-      top = self.scrollTop();
-
-    if (top > height) {
-      if (!btt.is(':visible')) {
-        btt.fadeIn(1500);
-      }
-    } else {
-      btt.fadeOut(1500);
-    }
+  $('.back-to-top').click(function() {
+    alert('Testing JQ');
   });
 });

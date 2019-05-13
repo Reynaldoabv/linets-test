@@ -15,14 +15,20 @@ img {
   display: hide;
   z-index: 20;
 }
-
-nav {
-  a {
-    img {
-      width: 150px;
-      height: 35px;
+header {
+  nav {
+    margin: 0;
+    a {
+      img {
+        width: 150px;
+        height: 35px;
+      }
     }
   }
+}
+
+.navbar-change-color {
+  background-color: #000;
 }
 
 .carousel-inner {
@@ -50,7 +56,10 @@ nav {
   }
 }
 
+.contact {
+  margin: 0;
+}
+
 footer {
   background-color: #000;
-  height: 100px;
 }
