@@ -23,7 +23,7 @@ nav a img {
   text-align: center; }
 
 .bootcamp {
-  background: url("/img/viewing-gallery-for-happy-people.png") no-repeat center bottom;
+  background: url("../img/viewing-gallery-for-happy-people.png") no-repeat center bottom;
   background-color: #fff;
   background-size: 250px 180px;
   height: 350px; }
@@ -34,3 +34,7 @@ nav a img {
   height: 250px; }
   .info p {
     max-width: 690px; }
+
+footer {
+  background-color: #000;
+  height: 100px; }
